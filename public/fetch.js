@@ -26,7 +26,7 @@ fetch(postUrl + postId, init)
 		console.log(err);
 	});
 
-//Modo 2: Funzione che si chiama da sola. Await non si può usare nel global scope, per questo viene creata una funzione senza nome che viene immediatamente chiamata.
+//Modo 2: Funzione che si chiama da sola(Immediately invoked function). Await non si può usare nel global scope, per questo viene creata una funzione senza nome che viene immediatamente chiamata.
 (async function () {
 	const result = await fetch(postUrl + postId, init);
 	console.log(result);
