@@ -20,15 +20,15 @@ a = 10;
 
 //Punto 2: Eseguo il console.log di queste coordinate. Tutto come al solito
 console.log("Sincrono");
-console.log(a);
-console.log(b);
+console.log("a "+a);
+console.log("b "+b);
 
 //Punto 6: Notare come finisce prima il timer da 2000 rispetto che il timer da 5000
 setTimeout(function () {
-	console.log("Timer 5000");
+	console.log("Scaduto timer 5000");
 }, 5000);
 setTimeout(function () {
-	console.log("Timer 2000");
+	console.log("Scaduto timer 2000");
 }, 2000);
 
 //Liberamente tratto da https://youtu.be/Kpn2ajSa92c.
