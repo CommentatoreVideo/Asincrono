@@ -1,15 +1,13 @@
-const postUrl = "https://jsonplaceholder.typicode.com/posts/";
-const headers = new Headers();
-//Aggiungo un header al pacchetto. In questo caso è un codice di autorizzazione che il server ignorerà
-headers.append("Authorization", "Bearer dsfsdfdsf$$££$£$");
+const postUrl = "https://jsonplaceholder.typicode.com/posts/1";
 const postId=1;
-const init = {
-	headers: headers,
-	method: "GET",
-};
 
+fetch(postUrl).then(result=>result.json()).then(data=>{
+	
+}).catch(error=>{
+	
+});;
 //Modo 1
-fetch(postUrl + postId, init)
+fetch(postUrl + postId)
 	.then(result => {
 		console.dir(result);
 		//Controllo che il risultato sia ok
@@ -28,7 +26,7 @@ fetch(postUrl + postId, init)
 
 //Modo 2: Funzione invocata immediatamente(Immediately invoked function). Await non si può usare nel global scope, per questo viene creata una funzione senza nome che viene immediatamente chiamata.
 (async function () {
-	const result = await fetch(postUrl + postId, init);
+	const result = await fetch(postUrl + postId);
 	console.log(result);
 	//Controllo che il risultato sia ok
 	if (!result.ok) throw new Error("Response failed");
