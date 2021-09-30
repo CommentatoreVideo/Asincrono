@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tabella 2</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+		<style>
+			.noOverflow{
+				overflow-y: hidden;
+			}
+			#divDettagli{
+				position:absolute;
+				z-index: 2;
+				top:0;
+				left:0;
+				width:100vw;
+				height:100vh;
+			}
+			#divDettagli .navbar{
+				position:absolute;
+				top:0;
+				left:0;
+				width:100vw;
+				height:10vh;
+				background-color:#909090;
+			}
+			#divDettagli .corpo {
+				position:absolute;
+				top:10vh;
+				left:0;
+				height:90vh;
+				width:100vw;
+				padding-left:2px;
+				padding-right:2px;
+				background-color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div id="divDettagli" hidden>
+				<div class="navbar">Premi per uscire</div>
+				<div class="corpo">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Chiave</th>
+								<th>Valore</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script src="tabella2.js"></script>
+	</body>
+</html>
