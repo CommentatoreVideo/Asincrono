@@ -24,7 +24,6 @@ function generaGrafico(percDaFare, percFatti) {
 			labels: ["Da fare", "Fatti"],
 			datasets: [
 				{
-					label: "Numero todos",
 					data: [percDaFare, percFatti],
 					backgroundColor: ["rgb(255, 0, 0)", "rgb(0, 255, 0)"],
 					hoverOffset: 4,
