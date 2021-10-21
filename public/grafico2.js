@@ -7,7 +7,7 @@ async function getTodos(url) {
 	return data;
 }
 function calcolaNumeroTodos(todos) {
-	const daFare = todos.reduce((tot, todo) => tot + todo.completed, 0);
+	const daFare = todos.reduce((tot, todo) => tot + !todo.completed, 0);
 	return [daFare, todos.length - daFare];
 }
 function calcolaPercentuali(numeroDaFare, numeroFatti) {
