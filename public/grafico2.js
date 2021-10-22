@@ -32,6 +32,15 @@ function generaGrafico(percDaFare, percFatti) {
 		},
 		options: {
 			maintainAspectRatio: false,
+			plugins: {
+				tooltip: {
+					callbacks: {
+						label: function ({ dataIndex, formattedValue }) {
+							return `${dataIndex === 0 ? "Da fare" : "Fatti"}: ${formattedValue}%`;
+						},
+					},
+				},
+			},
 		},
 	});
 }
