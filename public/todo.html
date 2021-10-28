@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tabella 4</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+	</head>
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">Tabella 4</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#" onclick="mostra('todos')">Todos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" onclick="mostra('aggiungi')">Aggiungi</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="divContent" id="todos" hidden>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>userId</th>
+							<th>id</th>
+							<th>title</th>
+							<th>completed</th>
+						</tr>
+					</thead>
+					<tbody id="tbody"></tbody>
+				</table>
+			</div>
+			<div class="divContent" id="aggiungi">
+				<h1>Aggiungi</h1>
+        <form>
+          <div class="form-group">
+            <label for="userId">userId</label>
+            <input type="text" class="form-control" id="userId" placeholder="Inserisci userId">
+          </div>
+          <div class="form-group">
+            <label for="title">title</label>
+            <input type="text" class="form-control" id="title" placeholder="Inserisci title">
+          </div>
+          <div class="form-group">
+            <label for="completed">completed</label>
+            <input type="text" class="form-control" id="completed" placeholder="Inserisci completed">
+          </div>
+          <input type="button" value="Aggiungi" id="btnAggiungiTodo" class="btn btn-success">
+        </form>
+			</div>
+		</div>
+		<script src="todo.js"></script>
+		<script>
+		</script>
+	</body>
+</html>
